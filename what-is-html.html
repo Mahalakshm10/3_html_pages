@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HTML?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LEARN HUB</div>
+        <div>
+            <a href="index.html">Front-End Dev</a>
+            <a href="what-is-html.html" class="active">HTML</a>
+            <a href="what-is-css.html">CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Front-End Topics</h3>
+            <ul>
+                <li><a href="index.html">What is Front-End Dev?</a></li>
+                <li><a href="what-is-html.html" class="active">What is HTML?</a></li>
+                <li><a href="what-is-css.html">What is CSS?</a></li>
+                <li><a href="#javascript">What is JavaScript? (Coming Soon)</a></li>
+                <li><a href="#frameworks">Front-End Frameworks (Coming Soon)</a></li>
+            </ul>
+            <h3>Related Technologies</h3>
+            <ul>
+                <li><a href="#react">React (Coming Soon)</a></li>
+                <li><a href="#angular">Angular (Coming Soon)</a></li>
+                <li><a href="#vue">Vue.js (Coming Soon)</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>What is HTML?</h1>
+            <p><strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>. It is the standard markup language for creating web pages.</p>
+            <p>HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.</p>
+
+            <h2>Basic HTML Document Structure</h2>
+            <p>A typical HTML document looks like this:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+
+            <h2>Key HTML Tags</h2>
+            <ul>
+                <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+                <li><code>&lt;head&gt;</code>: Contains meta-information about the HTML page (e.g., title, links to CSS).</li>
+                <li><code>&lt;body&gt;</code>: Contains the visible page content.</li>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings.</li>
+                <li><code>&lt;p&gt;</code>: Paragraphs.</li>
+                <li><code>&lt;a&gt;</code>: Links (anchors).</li>
+                <li><code>&lt;img&gt;</code>: Images.</li>
+                <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>: Unordered lists, ordered lists, list items.</li>
+                <li><code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>: Generic container elements for grouping content.</li>
+            </ul>
+
+            <div class="buttons">
+                <a href="index.html" class="prev-button">« Previous</a>
+                <a href="what-is-css.html" class="next-button">Next »</a>
+            </div>
+        </div>
+
+        <div class="ad-section">
+            <h3>Boost Your Skills!</h3>
+            <p>Explore more courses on HTML5 and web development.</p>
+            <a href="#" style="background-color: #28a745; padding: 1px 5px; color: white; text-decoration: none; border-radius: 3px;">Learn HTML Now!</a>
+            <img src="image\adv.jpg" alt="HTML Advertisement">
+            
+        </div>
+    </div>
+</body>
+</html>

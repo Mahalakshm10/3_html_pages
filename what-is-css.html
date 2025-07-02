@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is CSS?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LEARN HUB</div>
+        <div>
+            <a href="index.html">Front-End Dev</a>
+            <a href="what-is-html.html">HTML</a>
+            <a href="what-is-css.html" class="active">CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Front-End Topics</h3>
+            <ul>
+                <li><a href="index.html">What is Front-End Dev?</a></li>
+                <li><a href="what-is-html.html">What is HTML?</a></li>
+                <li><a href="what-is-css.html" class="active">What is CSS?</a></li>
+                <li><a href="#javascript">What is JavaScript? (Coming Soon)</a></li>
+                <li><a href="#frameworks">Front-End Frameworks (Coming Soon)</a></li>
+            </ul>
+            <h3>Related Technologies</h3>
+            <ul>
+                <li><a href="#react">React (Coming Soon)</a></li>
+                <li><a href="#angular">Angular (Coming Soon)</a></li>
+                <li><a href="#vue">Vue.js (Coming Soon)</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>What is CSS?</h1>
+            <p><strong>CSS</strong> stands for <strong>Cascading Style Sheets</strong>. It is used to style the look and feel of web pages written in HTML.</p>
+            <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media. It saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+
+            <h2>How CSS Works</h2>
+            <p>CSS works by associating style rules with HTML elements. A style rule consists of a selector and a declaration block:</p>
+            <pre><code>
+selector {
+    property: value;
+    property: value;
+}
+            </code></pre>
+            <p>For example, to change the color of all paragraphs to blue and set their font size to 16 pixels:</p>
+            <pre><code>
+p {
+    color: blue;
+    font-size: 16px;
+}
+            </code></pre>
+
+            <h2>Ways to Include CSS</h2>
+            <p>There are three ways to insert a style sheet:</p>
+            <ul>
+                <li><strong>External style sheet:</strong> The most common method. CSS is written in a separate `.css` file and linked to the HTML document using the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section. This is what we are using in this example (`style.css`).</li>
+                <li><strong>Internal style sheet:</strong> CSS is written within <code>&lt;style&gt;</code> tags inside the <code>&lt;head&gt;</code> section of an HTML document.</li>
+                <li><strong>Inline style:</strong> CSS is applied directly to an HTML element using the `style` attribute. This is generally discouraged for larger projects as it mixes content and presentation.</li>
+            </ul>
+
+            <h2>CSS Selectors</h2>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <ul>
+                <li><strong>Element Selector:</strong> Selects HTML elements based on their name (e.g., `p`, `h1`).</li>
+                <li><strong>ID Selector:</strong> Selects an element with a specific `id`. IDs must be unique within a page (e.g., `#myHeader`).</li>
+                <li><strong>Class Selector:</strong> Selects elements with a specific `class`. Classes can be used multiple times on a page (e.g., `.myClass`).</li>
+                <li><strong>Universal Selector:</strong> Selects all HTML elements on the page (e.g., `*`).</li>
+            </ul>
+
+            <div class="buttons">
+                <a href="what-is-html.html" class="prev-button">« Previous</a>
+                <a href="#" class="next-button">Next » (Coming Soon)</a>
+            </div>
+        </div>
+
+        <div class="ad-section">
+            <h3>Master CSS!</h3>
+            <p>Design beautiful and responsive websites with our CSS tutorials.</p>
+            <a href="#" style="background-color: #dc3545; padding: 1px 5px; color: white; text-decoration: none; border-radius: 3px;">Start Learning CSS!</a>
+            <img src="image\adv.jpg" alt="CSS Advertisement">
+            <p>Transform your web pages.</p>
+        </div>
+    </div>
+</body>
+</html>
